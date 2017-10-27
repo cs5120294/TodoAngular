@@ -1,15 +1,6 @@
-.breathVertical {
-    margin-top:10px;
-    margin-bottom:10px;
-}
-
-.breathHorizontal {
-    margin-left:10px;
-    margin-right:10px;
-}
-
 #todos{
-  background-color: pink;
+  background-color: skyblue;
+  margin-left: 10px;
 }
 
 #title{
@@ -18,154 +9,79 @@
 }
 
 #page{
-    background-color: black;
+    background-color: #1abc9c;
 }
 
 #main{
     width: 500px;
     margin: 50px auto;
-    border: 30px solid gainsboro;
+    border: 30px solid black;
     border-width: thick;
 }
 
-input[type=checkbox].check_active{
-    display: block;
-    -webkit-appearance: none;
-    width: 15px;
-    height: 15px;
-    border: 1px solid deepskyblue;
-    margin-right: 30px;
-    float: left;
-    border-radius: 3px;
+#inp{
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid red;
+  border-radius: 4px;
+  margin-left: 20px;
+  margin-right: 10px;
+  height: 30px;
 }
 
-/*input[type=checkbox].check_complete{*/
-    /*-webkit-appearance: none;*/
-    /*width: 15px;*/
-    /*height: 15px;*/
-    /*!*border: 1px solid deepskyblue;*!*/
-    /*background-color: deepskyblue;*/
-    /*margin-right: 30px;*/
-    /*float: left;*/
-    /*border-radius: 3px;*/
-/*}*/
-
-#hide_button_complete{
-    -webkit-appearance: none;
-    width: 150px;
-    color: blue;
-    background: transparent;
-    border: transparent;
-    float: right;
-    font-size: 12px;
-    text-align: left;
-    text-decoration: underline;
-    padding-right: 30px;
-    outline: none;
-}
-
-#hide_button_delete{
-    -webkit-appearance: none;
-    width: 150px;
-    color: blue;
-    background: transparent;
-    border: transparent;
-    float: right;
-    padding-right: 30px;
-    font-size: 12px;
-    text-decoration: underline;
-    text-align: left;
-    outline: none;
-}
-
-.regular-checkbox {
-    -webkit-appearance: none;
-    width: 15px;
-    height: 15px;
-    margin-right: 30px;
-    float: left;
-    background-color: deepskyblue;
-    border-radius: 3px;
-    display: block;
-    position: relative;
-}
-
-.regular-checkbox:checked {
-    background-color: deepskyblue;
-}
-
-.regular-checkbox:checked:after {
-    content: '\2714';
-    font-size: 12px;
-    position: absolute;
-    top: 0px;
-    left: 3px;
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
     color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
 }
 
-.completed-text{
-    margin-left: 50px;
-}
-
-button.delete_button{
-    -webkit-appearance: none;
-    color: red;
-    background: transparent;
-    border: transparent;
-    float: right;
-}
-
-#active_box{
-    padding-left: 20px;
-    border-bottom: 1px solid black;
-}
-
-div.todoStatusACTIVE {
-    display: block;
-    color : blue;
-    margin-left: 20px;
-    margin-right: 80px;
-    padding-bottom: 5px;
-}
-
-#add_todos{
-    /*border-bottom: 1px solid black;*/
-    margin-left: 20px;
-    margin-right: 80px;
-    padding-bottom: 5px;
-}
-
-#add_todo_button{
+.addbtn {
+    background-color: green;
     color: black;
-    background-color: lightskyblue;
+    border: 2px solid green;
+    border-radius:8px;
+    padding:6px 16px;
+    margin-right:16px;
 }
 
-#complete_box{
-    border-top: 1px solid black;
-    padding-top: 5px;
-    padding-left: 20px;
-    border-bottom: 1px solid black;
+.deletebtn {
+    background-color: #4CAF50;
+    color: black;
+    border: 2px solid #4CAF50;
+    border-radius:8px;
+    padding:6px 16px;
+    margin-right:16px;
+    margin-left:16px;
 }
 
-div.todoStatusCOMPLETE{
-    color : green;
-    text-decoration : line-through;
-    display: block;
-    margin-left: 20px;
-    margin-right: 80px;
-    padding-bottom: 5px;
+.updatebtn {
+    background-color: #ff5722;
+    color: black;
+    border: 2px solid #ff5722;
+    border-radius:8px;
+    padding:6px 16px;
+    margin-right:16px;
 }
 
-#delete_box{
-    padding-top: 5px;
-    padding-left: 20px;
+.markreadbtn {
+    background-color: #00ffff;
+    color: black;
+    border: 2px solid #00ffff;
+    border-radius:8px;
+    padding:6px 16px;
+    margin-right:16px;
 }
 
-div.todoStatusDELETED {
-    color : red;
-    text-decoration : line-through;
-    display: block;
-    margin-left: 50px;
-    margin-right: 80px;
-    padding-bottom: 5px;
+.undonepara{
+  font-size: 25px;
+  margin-left:16px;
 }

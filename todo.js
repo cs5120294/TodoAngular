@@ -14,6 +14,9 @@ var TodoList = /** @class */ (function () {
     TodoList.prototype.update = function (index, taskUpdate) {
         this.tasks[index] = taskUpdate;
     };
+    TodoList.prototype.read = function (index) {
+        this.status[index] = !this.status[index];
+    };
     TodoList.prototype.display = function () {
         console.log('Tasks ' + this.tasks);
         console.log('Status ' + this.status);
@@ -32,6 +35,9 @@ function deleteTodo(index) {
 }
 function updateTodo(index, taskupdate) {
     list.update(index, taskupdate);
+}
+function markTodo(index) {
+    list.read(index);
 }
 function getTodos() {
     return list;

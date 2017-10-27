@@ -26,6 +26,10 @@ class TodoList{
     this.tasks[index] = taskUpdate;
   }
 
+  read(index: number){
+    this.status[index] = !this.status[index];
+  }
+
   display(){
     console.log('Tasks '+this.tasks)
     console.log('Status '+this.status)
@@ -48,6 +52,10 @@ function deleteTodo(index: number){
 
 function updateTodo(index: number, taskupdate: string){
   list.update(index, taskupdate);
+}
+
+function markTodo(index: number){
+  list.read(index);
 }
 
 function getTodos(){
